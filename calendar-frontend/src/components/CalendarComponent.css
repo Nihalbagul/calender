@@ -1,0 +1,143 @@
+/* Ensure the calendar container takes up the full height */
+.calendar-container {
+    padding: 20px;
+    height: 100%;
+    position: relative;
+  }
+  
+  /* Overlay for the event form */
+  .event-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Style the event form card */
+  .event-form-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .event-form-card h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .event-form-card form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .event-form-card label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .event-form-card input, .event-form-card select {
+    width: calc(100% - 16px); /* Adjust width to fit padding */
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .event-form-card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .event-form-card button[type="submit"] {
+    background-color: #4CAF50; /* Green */
+  }
+  
+  .event-form-card button[type="button"] {
+    background-color: #f44336; /* Red */
+  }
+  
+  /* Custom event type form */
+  .custom-event-type-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto;
+  }
+  
+  .custom-event-type-card h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .custom-event-type-card form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .custom-event-type-card .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .custom-event-type-card label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .custom-event-type-card input, 
+  .custom-event-type-card select {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .custom-event-type-card button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .custom-event-type-card button[type="submit"] {
+    background-color: #007BFF; /* Blue */
+  }
+  
+  .custom-event-type-card button[type="button"] {
+    background-color: #f44336; /* Red */
+  }
+  
